@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terra Classic</title>
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
+    <!-- FontAwesome for GitHub Icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background: url('./A_subtle\,_dark-themed_abstract_background_with_sof.webp') no-repeat center center/cover;
+            /*background: linear-gradient(135deg, #0d1b2a, #1b263b, #415a77);
+            background-size: 400% 400%;
+            animation: gradient 15s ease infinite;*/
+            color: #fff; /* White text for contrast */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            overflow-x: hidden;
+        }
+
+        .page {
+            width: 100vw;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgba(0, 0, 0, 0.9);
+        }
+
+       /* @keyframes gradient {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }*/
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            text-align: center;
+            padding: 40px;
+            border-radius: 15px;
+            /*background: rgba(0, 0, 0, 0.9);
+            backdrop-filter: blur(10px);
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
+            border: 1px solid rgba(255, 255, 255, 0.2);*/
+        }
+
+        header h1 {
+            font-size: 3.5rem;
+            font-weight: 700;
+            color: #e0e1dd; /* Terra Classic yellow for main header */
+            margin-bottom: 10px;
+        }
+
+        header h2 {
+            font-size: 1.5rem;
+            font-weight: 300;
+            color: #e0e1dd; /* Lighter grey for subheader */
+            margin-bottom: 40px;
+        }
+
+        .explanation {
+            font-size: 1.2rem;
+            line-height: 1.8;
+            color: #e0e1dd;
+            margin-bottom: 60px;
+        }
+
+        .box-container {
+            display: flex;
+            justify-content: space-around;
+            margin-bottom: 50px;
+            flex-wrap: wrap;
+        }
+
+        .box {
+            background: rgba(255, 255, 255, 0.15);
+            padding: 30px;
+            border-radius: 15px;
+            width: 300px;
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            margin: 15px;
+        }
+
+        .box:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 40px rgba(0, 0, 0, 0.2);
+        }
+
+        .box h3 {
+            color: #e0e1dd; /* Terra Classic yellow for box titles */
+            margin-bottom: 20px;
+            font-size: 1.5rem;
+            font-weight: 600;
+        }
+
+        .box ul {
+            list-style: none;
+            padding: 0;
+            text-align: left;
+        }
+
+        .box ul li {
+            margin-bottom: 15px;
+        }
+
+        .box ul li a {
+            text-decoration: none;
+            color: #FFD93D; /* Terra Classic yellow for links */
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        .box ul li a:hover {
+            color: #e0e1dd; /* Lighter grey on hover */
+        }
+
+        .github-box {
+            margin-top: 40px;
+        }
+
+        .github-link {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(90deg, #24292e, #3f4a54);
+            color: #fff;
+            padding: 15px 30px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: background 0.3s ease, transform 0.3s ease;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+        }
+
+        .github-link:hover {
+            background: linear-gradient(90deg, #3f4a54, #24292e);
+            transform: translateY(-5px);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.5);
+        }
+
+        .github-link .fa-github {
+            margin-right: 10px;
+        }
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2.5rem;
+            }
+
+            header h2 {
+                font-size: 1.2rem;
+            }
+
+            .explanation {
+                font-size: 1rem;
+            }
+
+            .box-container {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .box {
+                width: 100%;
+                max-width: 90%;
+                margin-bottom: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="page">
+    <div class="container">
+        <header>
+            <h1>Welcome to Terra Classic</h1>
+            <h2>Community-Driven Decentralized Blockchain</h2>
+        </header>
+        <p class="explanation">
+            The Terra Classic chain is decentralized and has no single official homepage or social media. Below, you will find community-selected websites and social platforms to interact with LUNC and the community.
+        </p>
+        <div class="box-container">
+            <div class="box">
+                <h3>Websites</h3>
+                <ul>
+                    <li><a href="https://example-website1.com"><i class="fas fa-globe"></i> lunctoken.org</a></li>
+                </ul>
+            </div>
+            <div class="box">
+                <h3>Socials</h3>
+                <ul>
+                    <li><a href="https://t.me/example"><i class="fab fa-telegram"></i> Luna Classic Community</a></li>
+                    <li><a href="https://t.me/example"><i class="fab fa-telegram"></i> TCVita Community</a></li>
+                    <li><a href="https://t.me/example"><i class="fab fa-telegram"></i> Validator Chat</a></li>
+                    <li><a href="https://discord.gg/example"><i class="fab fa-discord"></i> Validator Discord</a></li>
+                </ul>
+            </div>
+            <div class="box">
+                <h3>Wallets</h3>
+                <ul>
+                    <li><a href="https://twitter.com/example">Keplr</a></li>
+                    <li><a href="https://t.me/example">Galaxy Station</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="github-box">
+            <a class="github-link" href="https://github.com/terra-classic">
+                <i class="fab fa-github"></i>
+                Contribute to Terra Classic
+            </a>
+        </div>
+    </div>
+</div>
+</body>
+</html>
